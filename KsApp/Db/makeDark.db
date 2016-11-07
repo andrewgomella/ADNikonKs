@@ -1,0 +1,32 @@
+record(bo, "$(P):START_OFFSET") {
+  field(DESC, "Start offset sequence")
+  field(DTYP, "Soft Channel")
+  field(ZNAM, "Done")
+  field(ONAM, "Busy")
+  field(SCAN, "Passive")
+}
+
+record(stringout, "$(P):OFFSET_DATE") {
+  field(DESC, "Date & time of acquired offset frame")
+  field(DTYP, "Soft Channel")
+  field(VAL, "N/A")
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+}
+
+record(stringout, "$(P):OFFSET_STATUS") {
+  field(DESC, "Offset acquisition status string")
+  field(DTYP, "Soft Channel")
+  field(VAL, "")
+  field(PINI, "YES")
+}
+
+record(ai, "$(P):OFFSET_MEAN_RBV") {
+  field(DESC, "Mean of the master offset frame")
+  field(DTYP, "Soft Channel")
+  field(VAL, "0")
+  field(EGU, "DN")
+  field(PREC, "9")
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+}

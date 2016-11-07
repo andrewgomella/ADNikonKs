@@ -1,0 +1,32 @@
+record(bo, "$(P):START_FLAT") {
+  field(DESC, "Start flat field sequence")
+  field(DTYP, "Soft Channel")
+  field(ZNAM, "Done")
+  field(ONAM, "Busy")
+  field(SCAN, "Passive")
+}
+
+record(stringout, "$(P):FLAT_DATE") {
+  field(DESC, "Date & time of acquired flat frame")
+  field(DTYP, "Soft Channel")
+  field(VAL, "N/A")
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+}
+
+record(stringout, "$(P):FLAT_STATUS") {
+  field(DESC, "flat field acquisition status string")
+  field(DTYP, "Soft Channel")
+  field(VAL, "")
+  field(PINI, "YES")
+}
+
+record(ai, "$(P):FLAT_MEAN_RBV") {
+  field(DESC, "Mean of the master flat field frame")
+  field(DTYP, "Soft Channel")
+  field(VAL, "0")
+  field(EGU, "DN")
+  field(PREC, "9")
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+}
