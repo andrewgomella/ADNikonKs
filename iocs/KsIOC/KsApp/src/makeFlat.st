@@ -10,7 +10,8 @@ program makeFlat ( "A=SIM:Qi2, X=SIM:XRAY" )
  *	#  A    	= prefix for all the PV's associatd with the camera ioc.
  *	#  X    	= prefix for all the PV's associatd with the xray ioc.
  *  
- *  __log__ 	= 26/2/2016: (AP) Version 1.0 created
+ *  __log__ 	= 02/26/2016: (AP) Version 1.0 created
+ *				= 12/16/2016: (AP) Remove tsDefs.h include
  *
  *	__to-do__  	= 			  	
  ****************************************************************************************************/ 
@@ -28,7 +29,6 @@ option -s; /* dont run in safe mode */
 %% #include <string.h>
 %% #include <epicsThread.h>
 %% #include <epicsTime.h>
-%% #include <tsDefs.h>
 
 #if defined(_WIN32)
 %% #include <Windows.h>

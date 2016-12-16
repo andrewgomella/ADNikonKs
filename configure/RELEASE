@@ -2,25 +2,25 @@
 # Run "gnumake clean uninstall install" in the application
 # top directory each time this file is changed.
 
-SYN_SUPPORT=C:/Epics/support
+SUPPORT=C:/Epics/support
 IPL_SUPPORT=
 TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 
 # Define synApps support modules. 
-AREA_DETECTOR=$(SYN_SUPPORT)/areaDetector
-ADCORE=$(SYN_SUPPORT)/areaDetector/ADCore
-ADBINARIES=$(SYN_SUPPORT)/areaDetector/ADBinaries
-ASYN=$(SYN_SUPPORT)/asyn-4-30
-AUTOSAVE=$(SYN_SUPPORT)/autosave-5-7-1
-BUSY=$(SYN_SUPPORT)/busy-1-6
-CALC=$(SYN_SUPPORT)/calc-3-6-1
-CAPUTLOG=$(SYN_SUPPORT)/caPutLog-3-4
-DEVIOCSTATS=$(SYN_SUPPORT)/devIocStats-3-1-14
-IOCADMIN=$(SYN_SUPPORT)/devIocStats-3-1-14/iocAdmin
-SNCSEQ=$(SYN_SUPPORT)/seq-2-2-3
-SSCAN=$(SYN_SUPPORT)/sscan-2-10-2
-STREAM=$(SYN_SUPPORT)/stream-2-6
-#STD=$(SYN_SUPPORT)/std-3-2
+AREA_DETECTOR=$(SUPPORT)/areaDetector
+ADCORE=$(SUPPORT)/areaDetector/ADCore
+ADBINARIES=$(SUPPORT)/areaDetector/ADBinaries
+ASYN=$(SUPPORT)/asyn-4-30
+AUTOSAVE=$(SUPPORT)/autosave-5-7-1
+BUSY=$(SUPPORT)/busy-1-6
+CALC=$(SUPPORT)/calc-3-6-1
+CAPUTLOG=$(SUPPORT)/caPutLog-3-4
+DEVIOCSTATS=$(SUPPORT)/devIocStats-3-1-14
+IOCADMIN=$(SUPPORT)/devIocStats-3-1-14/iocAdmin
+SNCSEQ=$(SUPPORT)/seq-2-2-3
+SSCAN=$(SUPPORT)/sscan-2-10-2
+STREAM=$(SUPPORT)/stream-2-6
+#STD=$(SUPPORT)/std-3-2
 
 # EPICS_BASE usually appears last so other apps can override stuff:
 EPICS_BASE=C:/Epics/base-3.14.12.5

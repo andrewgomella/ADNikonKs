@@ -29,6 +29,7 @@ program makeDark ( "A=SIM:Qi2" )
  *								   dependence. Completely re-worked.
  *				= 03/05/2016: (AP) Disable the $(P)$(R)EnableFlatField PV when acquiring master 
  *								   offset frame. Update version to 2.1
+ *				= 12/16/2016: (AP) Remove tsDefs.h include
  *	__to-do__  	= 			  	
  ****************************************************************************************************/ 
 
@@ -45,7 +46,6 @@ option -s; /* dont run in safe mode */
 %% #include <string.h>
 %% #include <epicsThread.h>
 %% #include <epicsTime.h>
-%% #include <tsDefs.h>
 
 #if defined(_WIN32)
 %% #include <Windows.h>
